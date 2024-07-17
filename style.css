@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    /* background-color: #ccc; */
+    
+   
+}
+
+.keys {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* background-image: url('pexels-pixabay-220067.jpg');
+    background-position: center;
+    background-size: cover; */
+
+
+}
+
+.keys::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('pexels-pixabay-220067.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: opacity(0.9); /* تعيين شفافية الصورة بنسبة 50٪ */
+    z-index: -1;
+}
+
+
+.key {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding: 15px 10px;
+    border: 3px solid black;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+    gap: 10px;
+    transition: all .07s ease;
+
+}
+
+
+.playing {
+    border-color: #ffc600;
+    transform: scale(1.2);
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 
+html {
+    font-size: 10px;
+    background: url('./background.jpg') bottom center;
+    background-size: cover;
+  }
+  
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+  }
+ */
